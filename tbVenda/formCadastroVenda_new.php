@@ -31,7 +31,7 @@
 
 <?php
     }
-    require_once 'crud.php'; 
+    require_once '../tbPessoa/crud.php'; 
     $obj=new Crud();
     $query=$obj->listar();
     $num=mysqli_num_rows($query);
@@ -70,7 +70,7 @@
         echo "Não há registros no banco de dados";
     }
 
-    require_once 'crudPro.php';  
+    require_once '../tbProduto/crudPro.php';  
     $obj=new Crudp();
     $query= $obj->listar();
     $num=mysqli_num_rows($query);

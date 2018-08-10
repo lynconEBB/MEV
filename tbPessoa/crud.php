@@ -1,5 +1,5 @@
 <?php
-require_once 'conexao.php';
+require_once '../conexao.php';
 class Crud{
     private $con;
     function __construct(){

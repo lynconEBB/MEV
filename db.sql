@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.23, for Linux (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.34-MariaDB, for Win32 (AMD64)
 --
--- Host: localhost    Database: dbmimoevc
+-- Host: localhost    Database: dbMimo
 -- ------------------------------------------------------
--- Server version	5.7.23-0ubuntu0.18.04.1
+-- Server version	10.1.34-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -16,28 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `tbitemvenda`
+-- Table structure for table `tbitem`
 --
 
-DROP TABLE IF EXISTS `tbitemvenda`;
+DROP TABLE IF EXISTS `tbitem`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `tbitemvenda` (
-  `numItem` int(11) NOT NULL,
-  `NumVenda` int(11) NOT NULL,
-  `qtd` int(3) NOT NULL,
-  PRIMARY KEY (`numItem`,`NumVenda`)
+CREATE TABLE `tbitem` (
+  `idItem` int(11) NOT NULL AUTO_INCREMENT,
+  `precoParcial` decimal(6,2) NOT NULL,
+  `idProduto` int(11) NOT NULL,
+  `idVenda` int(11) NOT NULL,
+  `qtd` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`idItem`),
+  KEY `fk_tbVenda_tbItem` (`idVenda`),
+  KEY `fk_tbProduto_tbItem` (`idProduto`),
+  CONSTRAINT `fk_tbProduto_tbItem` FOREIGN KEY (`idProduto`) REFERENCES `tbproduto` (`idProduto`),
+  CONSTRAINT `fk_tbVenda_tbItem` FOREIGN KEY (`idVenda`) REFERENCES `tbvenda` (`idVenda`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tbitemvenda`
+-- Dumping data for table `tbitem`
 --
 
-LOCK TABLES `tbitemvenda` WRITE;
-/*!40000 ALTER TABLE `tbitemvenda` DISABLE KEYS */;
-INSERT INTO `tbitemvenda` VALUES (0,4,1);
-/*!40000 ALTER TABLE `tbitemvenda` ENABLE KEYS */;
+LOCK TABLES `tbitem` WRITE;
+/*!40000 ALTER TABLE `tbitem` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbitem` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -60,8 +65,9 @@ CREATE TABLE `tbpessoa` (
   `Senha` varchar(45) DEFAULT NULL,
   `Email` varchar(45) DEFAULT NULL,
   `TipoPessoa` char(1) DEFAULT '1',
+  `PIS` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`idPessoa`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,6 +76,7 @@ CREATE TABLE `tbpessoa` (
 
 LOCK TABLES `tbpessoa` WRITE;
 /*!40000 ALTER TABLE `tbpessoa` DISABLE KEYS */;
+INSERT INTO `tbpessoa` VALUES (4,'Lyncon','Foz do IguaÃ§u','Jardim IpÃª','BiguaÃ§u','659','121128809-93','(45)3524-8067','LynconEBB','123','lynconlyn@gmail.com','1',NULL);
 /*!40000 ALTER TABLE `tbpessoa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,7 +93,7 @@ CREATE TABLE `tbproduto` (
   `preco` varchar(6) NOT NULL,
   `qtdestoque` varchar(6) NOT NULL,
   PRIMARY KEY (`idProduto`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +102,7 @@ CREATE TABLE `tbproduto` (
 
 LOCK TABLES `tbproduto` WRITE;
 /*!40000 ALTER TABLE `tbproduto` DISABLE KEYS */;
-INSERT INTO `tbproduto` VALUES (4,'Abotoadura','35','2'),(5,'Maq Lavar','2000','3');
+INSERT INTO `tbproduto` VALUES (4,'Abotoadura','35','2'),(6,'Buque de Flores','30,32','10');
 /*!40000 ALTER TABLE `tbproduto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,13 +114,15 @@ DROP TABLE IF EXISTS `tbvenda`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tbvenda` (
-  `numVenda` int(11) NOT NULL AUTO_INCREMENT,
+  `idVenda` int(11) NOT NULL AUTO_INCREMENT,
   `dtVenda` date DEFAULT NULL,
   `cartaoBand` varchar(15) DEFAULT NULL,
   `cartaoNum` int(10) DEFAULT NULL,
-  `vlTotal` double DEFAULT NULL,
+  `Total` decimal(8,2) DEFAULT NULL,
   `idCliente` int(11) NOT NULL,
-  PRIMARY KEY (`numVenda`)
+  PRIMARY KEY (`idVenda`),
+  KEY `fk_tbPessoa_tbVenda` (`idCliente`),
+  CONSTRAINT `fk_tbPessoa_tbVenda` FOREIGN KEY (`idCliente`) REFERENCES `tbpessoa` (`idPessoa`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -135,4 +144,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-10  5:26:42
+-- Dump completed on 2018-08-10 16:46:16
