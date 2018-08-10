@@ -1,16 +1,24 @@
-<meta charset="utf-8">
 <html>
-   <head>
-      <title>Cadastro de pessoas</title>
-   </head>
-   <body>
-	  Cadastro de pessoas 
-      <form action="crud.php" method="post" enctype="multipart/form-data">
-		 <! -- <input type="number" name="id" placeholder="Seu Id"><br> -->
-         <input type="text" name="nome" placeholder="Seu nome"><br>
-         <input type="text" name="endereco" placeholder="Seu endereco"><br>
-         <input type="hidden" name="acao" value="1">
-         <input type="submit" value="Salvar">
-      </form>
-   </body>
+    <head>
+        <title>Cadastro de pessoas</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+	    Cadastro de pessoas<br> 
+        <form action="crud.php" method="post" enctype="multipart/form-data">
+            Nome: <input type="text" name="NomeCompleto"><br>
+            E-mail: <input type="text" name="Email"><br>
+            Login: <input type="text" name="Login" placeholder="Nome de Usuário"><br>
+            Senha: <input type="password" name="Senha"><br>
+            CPF: <input type="text" name="CPF"><br>
+            Cidade: <input type="text" name="Cidade"><br>
+            Bairro: <input type="text" name="Bairro"><br>
+            Rua: <input type="text" name="Rua"><br>
+            Numero: <input type="text" name="Numero"><br>
+            Telefone: <input type="text" name="Telefone"><br>
+            <input type="hidden" name="TipoPessoa" value="1">
+            <input type="hidden" name="acao" value="1">
+            <input type="submit" value="Salvar">
+        </form>
+    </body>
 </html>

@@ -1,8 +1,15 @@
 <?php 
-   require_once 'crudPro.php';
-   $obj=new Crud();
-   $query=$obj->listaPorId($_REQUEST["id"]);
-   $produto=mysqli_fetch_object($query);
+    session_start();
+    if(! isset($_SESSION["autenticado"]) || $_SESSION["autenticado"] != TRUE){
+        echo "Acesso não autorizado!<BR>";
+        echo "Por gentileza, faça o seu login <A href='login.php'>clicando aqui</A>.";
+        exit();
+    }
+    else{
+        require_once 'crudPro.php';
+        $obj=new CrudP();
+        $query=$obj->listaPorId($_REQUEST["id"]);
+        $produto=mysqli_fetch_object($query);
 ?>
 <meta charset="utf-8">
 <html>
@@ -21,3 +28,6 @@
       </form>
    </body>
 </html>
+<?php
+    }
+?>
