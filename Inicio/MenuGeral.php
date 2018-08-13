@@ -16,7 +16,7 @@
     <body>
         <h3><a href="../tbPessoa/cliente.php">Menu Cliente</a></h3><br>
         <h3><a href="../tbProduto/produto.php">Menu Produto</a></h3><br>
-        <h3><a href="../tbVenda/formCadastroVenda_new.php">Menu Venda</a></h3><br><br>
+        <h3><a href="../tbVenda/menuVenda.php">Menu Venda</a></h3><br><br>
         <a href="validacao.php?acao=0">Sair</a><BR>
     </body>
 </html>
