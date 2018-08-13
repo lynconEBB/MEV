@@ -10,5 +10,6 @@ Projeto para criar um sistema de gerenciamento de uma loja online chamada Mimo e
 
 ## Diagramas
  
-![alt text](https://github.com/lynconEBB/MEV/blob/master/Modelos/workbench.png "Logo Title Text 1")
+![alt text](https://github.com/lynconEBB/MEV/blob/master/Modelos/workbench.png "Diagrama de tabelas sql")
 
+![alt text](https://github.com/lynconEBB/MEV/blob/master/Modelos/ModeloEntidadeRelacionamento.jpg "Digrama Entidade-Relacionamento")
