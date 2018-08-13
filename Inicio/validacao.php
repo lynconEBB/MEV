@@ -1,6 +1,6 @@
 <?PHP
     session_start();
-    require_once "crud.php";
+    require_once "../tbPessoa/crud.php";
     $obj = new Crud();
 
     function sair (){
@@ -36,7 +36,7 @@
     </head>
     <body>
         <BR><BR><a href="login.php"><<--Retornar ao login </a><BR>
-        <a href="formCadastro.php">Crie seu Login </a><BR>
+        <a href="../tbPessoa/formCadastro.php">Crie seu Login </a><BR>
     </body>
 </html>
  
