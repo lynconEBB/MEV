@@ -6,7 +6,7 @@
         exit();
     }
     else{
-        echo "<a href='formCadastroPro.php'>Cadastro de Produto</a><br>";
+        echo "<a href='../View/formCadastroPro.php'>Cadastro de Produto</a><br>";
         echo" <a href='relatorioGeralPro.php'>Relatório Produtos em Estoque</a>";
     }
 ?>

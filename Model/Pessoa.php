@@ -1,10 +1,16 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 22/09/2018
+ * Time: 13:59
+ */
 
 class Pessoa{
     private $idPessoa;
     private $nomeCompleto;
     private $cidade;
-    private $Bairro;
+    private $bairro;
     private $rua;
     private $numero;
     private $cpf;
@@ -47,12 +53,12 @@ class Pessoa{
 
     public function getBairro()
     {
-        return $this->Bairro;
+        return $this->bairro;
     }
 
-    public function setBairro($Bairro)
+    public function setBairro($bairro)
     {
-        $this->Bairro = $Bairro;
+        $this->bairro = $bairro;
     }
 
     public function getRua()
@@ -144,5 +150,8 @@ class Pessoa{
     {
         $this->pis = $pis;
     }
+
+
+
 
 }

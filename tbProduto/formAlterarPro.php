@@ -18,7 +18,7 @@
    </head>
    <body>	
       Cadastro de Produtos - Alteração
-      <form action="crudPro.php" method="post">
+      <form action="../Controller/crudPro.php" method="post">
          <input type="text" name="descricao" value="<?php echo $produto->descricao; ?>"><br>
          <input type="text" name="preco" value="<?php  echo $produto->preco; ?>"><br>
 		 <input type="text" name="qtdestoque" value="<?php  echo $produto->qtdestoque; ?>"><br>

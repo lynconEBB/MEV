@@ -1,10 +1,16 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 22/09/2018
+ * Time: 14:09
+ */
 
 class Item{
     private $idItem;
     private $precoParcial;
-    private $idProduto;
-    private $idvenda;
+    private $ifProduto;
+    private $venda;
     private $qtd;
 
     public function getIdItem()
@@ -12,7 +18,7 @@ class Item{
         return $this->idItem;
     }
 
-    public function setIdItem($idItem)
+    public function setIdItem($idItem): void
     {
         $this->idItem = $idItem;
     }
@@ -22,29 +28,29 @@ class Item{
         return $this->precoParcial;
     }
 
-    public function setPrecoParcial($precoParcial)
+    public function setPrecoParcial($precoParcial): void
     {
         $this->precoParcial = $precoParcial;
     }
 
-    public function getIdProduto()
+    public function getIfProduto()
     {
-        return $this->idProduto;
+        return $this->ifProduto;
     }
 
-    public function setIdProduto($idProduto)
+    public function setIfProduto($ifProduto): void
     {
-        $this->idProduto = $idProduto;
+        $this->ifProduto = $ifProduto;
     }
 
-    public function getIdvenda()
+    public function getVenda()
     {
-        return $this->idvenda;
+        return $this->venda;
     }
 
-    public function setIdvenda($idvenda)
+    public function setVenda($venda): void
     {
-        $this->idvenda = $idvenda;
+        $this->venda = $venda;
     }
 
     public function getQtd()
@@ -52,9 +58,10 @@ class Item{
         return $this->qtd;
     }
 
-    public function setQtd($qtd)
+    public function setQtd($qtd): void
     {
         $this->qtd = $qtd;
     }
+
 
 }

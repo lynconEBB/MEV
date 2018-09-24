@@ -6,7 +6,7 @@
         exit();
     }
     else{
-        echo "<a href='formCadastro.php'>Cadastro</a><br>";
+        echo "<a href='../View/formCadastro.php'>Cadastro</a><br>";
         echo "<a href='relatorioGeral.php'>Relatório</a>";
     }
 ?>

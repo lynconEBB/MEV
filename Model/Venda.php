@@ -1,11 +1,17 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 22/09/2018
+ * Time: 14:13
+ */
 
 class Venda{
     private $idVenda;
     private $dtVenda;
     private $cartaoBand;
     private $cartaoNum;
-    private $Total;
+    private $total;
     private $idCliente;
 
     public function getIdVenda()
@@ -13,7 +19,7 @@ class Venda{
         return $this->idVenda;
     }
 
-    public function setIdVenda($idVenda)
+    public function setIdVenda($idVenda): void
     {
         $this->idVenda = $idVenda;
     }
@@ -23,7 +29,7 @@ class Venda{
         return $this->dtVenda;
     }
 
-    public function setDtVenda($dtVenda)
+    public function setDtVenda($dtVenda): void
     {
         $this->dtVenda = $dtVenda;
     }
@@ -33,7 +39,7 @@ class Venda{
         return $this->cartaoBand;
     }
 
-    public function setCartaoBand($cartaoBand)
+    public function setCartaoBand($cartaoBand): void
     {
         $this->cartaoBand = $cartaoBand;
     }
@@ -43,19 +49,19 @@ class Venda{
         return $this->cartaoNum;
     }
 
-    public function setCartaoNum($cartaoNum)
+    public function setCartaoNum($cartaoNum): void
     {
         $this->cartaoNum = $cartaoNum;
     }
 
     public function getTotal()
     {
-        return $this->Total;
+        return $this->total;
     }
 
-    public function setTotal($Total)
+    public function setTotal($total): void
     {
-        $this->Total = $Total;
+        $this->total = $total;
     }
 
     public function getIdCliente()
@@ -63,9 +69,10 @@ class Venda{
         return $this->idCliente;
     }
 
-    public function setIdCliente($idCliente)
+    public function setIdCliente($idCliente): void
     {
         $this->idCliente = $idCliente;
     }
+
 
 }

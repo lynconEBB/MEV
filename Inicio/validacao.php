@@ -36,7 +36,7 @@
     </head>
     <body>
         <BR><BR><a href="login.php"><<--Retornar ao login </a><BR>
-        <a href="../tbPessoa/formCadastro.php">Crie seu Login </a><BR>
+        <a href="../View/formCadastro.php">Crie seu Login </a><BR>
     </body>
 </html>
  
