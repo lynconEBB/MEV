@@ -17,7 +17,7 @@
             $obj=new CrudP();
             $query=$obj->listar();
 
-            echo "<form action='crudVenda.php' method='post'  enctype='multipart/form-data'>";
+            echo "<form action='../Controller/crudVenda.php' method='post'  enctype='multipart/form-data'>";
                 echo "<table border=1>";
                 echo "<tr>
                         <td>ID</td>

@@ -1,15 +1,8 @@
-<?php 
-    session_start();
-    if(! isset($_SESSION["autenticado"]) || $_SESSION["autenticado"] != TRUE){
-        echo "Acesso não autorizado!<BR>";
-        echo "Por gentileza, faça o seu login <A href='login.php'>clicando aqui</A>.";
-        exit();
-    }
-    else{
-        require_once 'crud.php';
-        $obj=new Crud();
-        $query=$obj->listaPorId($_REQUEST["id"]);
-        $pessoa=mysqli_fetch_object($query);
+<?php
+    require_once '../DAO/pessoaDAO.php';
+    $obj=new PessoaDAO();
+    $query = $obj->listaPorId($_REQUEST["id"]);
+    $pessoa=mysqli_fetch_object($query);
 ?>
 <meta charset="utf-8">
 <html>
@@ -18,8 +11,8 @@
     </head>
     <body>	
         Cadastro de pessoas - Alteração
-        <?php echo $pessoa->Senha?>
-        <form action="crud.php" method="post">
+
+        <form action="../Controller/PessoaController.php" method="post">
             Nome: <input type="text" name="NomeCompleto" value="<?php echo $pessoa->NomeCompleto?>"><br>
             E-mail: <input type="text" name="Email" value="<?php echo $pessoa->Email?>"><br>
             Login: <input type="text" name="Login" value="<?php echo $pessoa->Login?>"><br>
@@ -30,12 +23,9 @@
             Numero: <input type="text" name="Numero" value="<?php echo $pessoa->Numero?>"><br>
             Telefone: <input type="text" name="Telefone" value="<?php echo $pessoa->Telefone?>"><br>
             <input type="hidden" name="TipoPessoa" value="1">
-            <input type="hidden" name="acao" value="4">
+            <input type="hidden" name="acao" value="3">
             <input type="hidden" name="idPessoa" value="<?php echo $_REQUEST["id"]?>">
             <input type="submit" value="Salvar">
         </form>
    </body>
 </html>
-<?php
-    }
-?>

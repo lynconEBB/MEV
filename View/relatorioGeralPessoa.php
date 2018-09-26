@@ -5,21 +5,21 @@
         $num = mysqli_num_rows($query);
         
         if($num>0){
-            echo "<table border=1>";
-            echo "<tr>
-                    <td>id</td>
-                    <td>Login</td>
-                    <td>Nome</td>
-                    <td>Email</td>
-                    <td>Cidade</td>
-                    <td>Bairro</td>
-                    <td>Rua</td>
-                    <td>Numero</td>
-                    <td>CPF</td>
-                    <td>Telefone</td>
-                    <td>Ações</td>
-                </tr>";
-            while($array=mysqli_fetch_object($query)){
+            echo "<table border = 1>";
+            echo "<tr>";
+            echo"<td>id</td>";
+            echo"<td>Login</td>";
+            echo"<td>Nome</td>";
+            echo"<td>Email</td>";
+            echo"<td>Cidade</td>";
+            echo"<td>Bairro</td>";
+            echo"<td>Rua</td>";
+            echo"<td>Numero</td>";
+            echo"<td>CPF</td>";
+            echo"<td>Telefone</td>";
+            echo"<td>Ações</td>";
+            echo"</tr>";
+            while($array = mysqli_fetch_object($query)){
             echo "<tr>";
                 echo "<td>".$array->idPessoa."</td>";
                 echo "<td>".$array->Login."</td>";
@@ -31,13 +31,12 @@
                 echo "<td>".$array->Numero."</td>";
                 echo "<td>".$array->CPF."</td>";
                 echo "<td>".$array->Telefone."</td>";
-                echo "<td><a href='crud.php?acao=2&id=".$array->idPessoa."'>Excluir</a>
-                        |<a href='formAlterar.php?id=".$array->idPessoa."'>Alterar</a> 
-                        </td>
-                </tr>";
+                echo "<td><a href='../Controller/PessoaController.php?acao=2&id=".$array->idPessoa."'>Excluir</a>";
+                echo "|<a href='../View/formAlterarPessoa.php?id=".$array->idPessoa."'>Alterar</a> </td>";
+                echo "</tr>";
         }
             echo "</table>";
-            echo "<hr> foram encontrados ".$num." registros";
+            echo "<hr> Foram encontrados ".$num." registros";
         }else{
             echo "não há registros no banco de dados";
         }

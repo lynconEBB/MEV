@@ -35,7 +35,7 @@
         <title>Validação de Login</title>
     </head>
     <body>
-        <BR><BR><a href="login.php"><<--Retornar ao login </a><BR>
+        <BR><BR><a href="../View/login.php"><<--Retornar ao login </a><BR>
         <a href="../View/formCadastro.php">Crie seu Login </a><BR>
     </body>
 </html>

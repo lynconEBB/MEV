@@ -49,7 +49,7 @@
                 }else{
                     echo "Erro: Quantidade de Itens Invalida";
                     $this->excluir($idVenda);
-                    echo "<a href='formEscolheCliente.php'>Clique para reiniciar a Venda</a>";
+                    echo "<a href='../tbVenda/formEscolheCliente.php'>Clique para reiniciar a Venda</a>";
                     exit();
                 }
                 $Total+=$PrecoParcial;
@@ -58,7 +58,7 @@
         }else{
             echo "Erro: Quantidade de Produtos Invalida";
             $this->excluir($idVenda);
-            echo "<a href='formEscolheCliente.php'>Clique para reiniciar a Venda</a>";
+            echo "<a href='../tbVenda/formEscolheCliente.php'>Clique para reiniciar a Venda</a>";
             exit();
         }
     }

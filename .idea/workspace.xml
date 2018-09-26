@@ -2,15 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3e630c9-cb02-4272-9c88-cd510a0ebc41" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Inicio/validacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Inicio/validacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Pessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Pessoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Produto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Produto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Venda.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Venda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbPessoa/cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/tbPessoa/cliente.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbProduto/formAlterarPro.php" beforeDir="false" afterPath="$PROJECT_DIR$/tbProduto/formAlterarPro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbProduto/produto.php" beforeDir="false" afterPath="$PROJECT_DIR$/tbProduto/produto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/formAlterarPessoa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/formAlterarProduto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/menuPessoa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Lyncon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Lyncon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/PessoaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/PessoaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ProdutoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ProdutoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/PessoaDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/PessoaDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/ProdutoDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/ProdutoDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inicio/MenuGeral.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/MenuGeral.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inicio/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inicio/validacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/validacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/cliente.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/formAlterar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/formAlterarPro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/formCadastroPro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/relatorioGeralPessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/relatorioGeralPessoa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conexao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbPessoa/crud.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbPessoa/formAlterar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbPessoa/formCadastro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbPessoa/relatorioGeral.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbProduto/crudPro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbProduto/formCadastroPro.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formCadastroProduto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbProduto/produto.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/menuProduto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbProduto/relatorioGeralPro.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/relatorioGeralProduto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbVenda/NotaFiscal.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/NotaFiscal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbVenda/crudVenda.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/crudVenda.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbVenda/formCadastroVenda.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formCadastroVenda.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbVenda/formEscolheCliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formEscolheCliente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbVenda/formEscolheNota.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formEscolheNota.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbVenda/formEscolheProduto.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formEscolheProduto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbVenda/menuVenda.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/menuVenda.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,23 +53,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="dbMimo@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="dbMimo@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="dbMimo@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dbmimo: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -59,24 +67,25 @@
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="php" value="44" />
+          <entry key="php" value="70" />
           <entry key="sql" value="10" />
           <entry key="tbitem" value="2" />
           <entry key="tbpessoa" value="1" />
-          <entry key="tbproduto" value="1" />
+          <entry key="tbproduto" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="4" />
+          <entry key="Database Element" value="6" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="44" />
+          <entry key="PHP" value="70" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="9" />
         </counts>
@@ -84,15 +93,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="PHP Console" value="6" />
-          <entry key="php" value="1425" />
+          <entry key="cell" value="28" />
+          <entry key="php" value="2681" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="PHP" value="1430" />
+          <entry key="HTML" value="6" />
+          <entry key="PHP" value="2681" />
           <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Scratch" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -105,24 +116,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/View/relatorioGeralPessoa.php">
+        <entry file="file://$PROJECT_DIR$/DAO/conexao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAO/PessoaDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="34">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>body</find>
+      <find>password</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>password</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,15 +148,22 @@
         <option value="$PROJECT_DIR$/Model/Venda.php" />
         <option value="$PROJECT_DIR$/View/formCadastro.php" />
         <option value="$PROJECT_DIR$/View/formCadastroPessoa.php" />
-        <option value="$PROJECT_DIR$/Controller/PessoaController.php" />
         <option value="$PROJECT_DIR$/Model/Pessoa.php" />
         <option value="$PROJECT_DIR$/Controller/crudPro.php" />
         <option value="$PROJECT_DIR$/Model/Produto.php" />
         <option value="$PROJECT_DIR$/View/formCadastroPro.php" />
-        <option value="$PROJECT_DIR$/DAO/ProdutoDAO.php" />
-        <option value="$PROJECT_DIR$/Controller/ProdutoController.php" />
-        <option value="$PROJECT_DIR$/DAO/PessoaDAO.php" />
+        <option value="$PROJECT_DIR$/View/formAlterar.php" />
         <option value="$PROJECT_DIR$/View/relatorioGeralPessoa.php" />
+        <option value="$PROJECT_DIR$/DAO/PessoaDAO.php" />
+        <option value="$PROJECT_DIR$/Controller/PessoaController.php" />
+        <option value="$PROJECT_DIR$/View/menuPessoa.php" />
+        <option value="$PROJECT_DIR$/View/formAlterarPro.php" />
+        <option value="$PROJECT_DIR$/View/relatorioGeralProduto.php" />
+        <option value="$PROJECT_DIR$/View/formAlterarProduto.php" />
+        <option value="$PROJECT_DIR$/Controller/ProdutoController.php" />
+        <option value="$PROJECT_DIR$/View/menuProduto.php" />
+        <option value="$PROJECT_DIR$/DAO/ProdutoDAO.php" />
+        <option value="$PROJECT_DIR$/View/login.php" />
       </list>
     </option>
   </component>
@@ -172,7 +190,7 @@
       <server host="localhost" id="df5b459e-57f5-4dcd-8450-114aee412b20" name="Apache on XAMPP" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP on xampp" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
@@ -209,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,12 +236,18 @@
             </path>
             <path>
               <item name="MEV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MEV" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MEV" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,7 +261,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -259,17 +282,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.relatorioGeralPessoa.php">
+  <component name="RunManager" selected="JavaScript Debug.formAlterarPro.php">
+    <configuration name="PessoaController.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/MEV/Controller/PessoaController.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="formAlterarPro.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/MEV/View/formAlterarPro.php">
+      <method v="2" />
+    </configuration>
     <configuration name="formCadastroPessoa.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/MEV/View/formCadastroPessoa.php">
       <method v="2" />
     </configuration>
     <configuration name="formCadastroPro.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/MEV/View/formCadastroPro.php">
       <method v="2" />
     </configuration>
-    <configuration name="login.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/MEV/Inicio/login.php">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+    <configuration name="formAlterarPro.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/View/formAlterarPro.php">
       <method v="2" />
     </configuration>
     <configuration name="relatorioGeralPessoa.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/View/relatorioGeralPessoa.php">
@@ -281,17 +307,19 @@
     <list>
       <item itemvalue="PHP Web Page.DebugWithApplicationSettings" />
       <item itemvalue="PHP Script.relatorioGeralPessoa.php" />
-      <item itemvalue="PHP Script.index.php" />
-      <item itemvalue="JavaScript Debug.login.php" />
       <item itemvalue="JavaScript Debug.formCadastroPessoa.php" />
       <item itemvalue="JavaScript Debug.formCadastroPro.php" />
+      <item itemvalue="JavaScript Debug.PessoaController.php" />
+      <item itemvalue="PHP Script.formAlterarPro.php" />
+      <item itemvalue="JavaScript Debug.formAlterarPro.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.formAlterarPro.php" />
+        <item itemvalue="PHP Script.formAlterarPro.php" />
+        <item itemvalue="JavaScript Debug.PessoaController.php" />
         <item itemvalue="JavaScript Debug.formCadastroPessoa.php" />
         <item itemvalue="JavaScript Debug.formCadastroPro.php" />
-        <item itemvalue="JavaScript Debug.login.php" />
-        <item itemvalue="PHP Script.index.php" />
       </list>
     </recent_temporary>
   </component>
@@ -315,58 +343,39 @@
       <workItem from="1537722573810" duration="16000" />
       <workItem from="1537726314292" duration="1221000" />
       <workItem from="1537805710478" duration="1228000" />
+      <workItem from="1537978799372" duration="7339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20214000" />
+    <option name="totallyTimeSpent" value="27553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1369936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13859275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49893504" weight="0.32864866" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50106496" side_tool="true" weight="0.32864866" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32864866" />
+      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49893504" weight="0.32864866" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50106496" side_tool="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32942432" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13365282" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49893504" weight="0.32864866" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50106496" side_tool="true" weight="0.32864866" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32864866" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -409,42 +418,15 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/753d9e1c-487a-4380-a4d4-349d06a0f9cf/console.sql" />
     <entry file="file://$PROJECT_DIR$/../index.php" />
     <entry file="file://$PROJECT_DIR$/index.php" />
-    <entry file="file://$PROJECT_DIR$/Inicio/MenuGeral.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="das://778eeb40-0597-4991-b29d-aff33ce5c696/schema/dbmimo/table/tbpessoa" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a4880aba-73d9-489a-89c5-394cd83c71d9/console.sql" />
-    <entry file="file://$PROJECT_DIR$/DAO/conexao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://778eeb40-0597-4991-b29d-aff33ce5c696/schema/dbmimo/table/tbitem" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/778eeb40-0597-4991-b29d-aff33ce5c696/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/778eeb40-0597-4991-b29d-aff33ce5c696/console_1.sql" />
-    <entry file="file://$PROJECT_DIR$/tbProduto/formAlterarPro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Item.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/View/formCadastro.php" />
-    <entry file="file://$PROJECT_DIR$/Inicio/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Venda.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -463,27 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/ProdutoDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://778eeb40-0597-4991-b29d-aff33ce5c696/schema/dbmimo/table/tbproduto">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/ProdutoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/relatorioGeral.php" />
     <entry file="file://$PROJECT_DIR$/View/formCadastroPro.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -499,31 +460,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/PessoaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Controller/validacao.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/MenuGeral.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/cliente.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/View/formCadastroPessoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="255">
           <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formAlterar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/relatorioGeralPessoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="578">
+          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/menuPessoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/produto.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/PessoaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DAO/PessoaDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="306">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formAlterarPro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formAlterarPessoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/relatorioGeralProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/ProdutoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/menuProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/ProdutoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formAlterarProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://778eeb40-0597-4991-b29d-aff33ce5c696/schema/dbmimo/table/tbproduto">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formCadastroProduto.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Venda.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/conexao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>

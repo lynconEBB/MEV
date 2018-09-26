@@ -10,7 +10,7 @@ class PessoaDAO{
         $sql="insert into tbPessoa (NomeCompleto, Cidade,Bairro,Rua,Numero,CPF,Telefone,Login,Senha,Email,TipoPessoa) values('".$pessoa->getNomeCompleto()."','".$pessoa->getCidade()."','".$pessoa->getBairro()."','".$pessoa->getRua()."','".$pessoa->getNumero()."','".$pessoa->getCpf()."','".$pessoa->getTelefone()."','".$pessoa->getLogin()
             ."','".$pessoa->getSenha()."','".$pessoa->getEmail()."','".$pessoa->getTipoPessoa()."')";
         mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
-        header("Location:../View/formCadastroPessoa.php");
+        header("Location:../View/relatorioGeralPessoa.php");
     }
     function listar(){
         $sql="select * from tbPessoa";
@@ -18,28 +18,26 @@ class PessoaDAO{
         return $query;
     }
 
-    /*function listaPorId(){
-        $sql="select * from tbPessoa where idPessoa=".$_REQUEST["id"] ;
-        $query=mysqli_query($this->con, $sql);
+    function listaPorId(){
+        $sql = "select * from tbPessoa where idPessoa=".$_REQUEST["id"] ;
+        $query = mysqli_query($this->con, $sql);
         return $query;
     }
+    function alterar(Pessoa $pessoa){
+        $sql="update tbPessoa set NomeCompleto='".$pessoa->getNomeCompleto()."', Cidade='".$pessoa->getCidade()."', Bairro='".$pessoa->getBairro()."', Rua='".$pessoa->getRua()."', Numero='".$pessoa->getNumero().
+            "', CPF='".$pessoa->getCpf()."', Telefone='".$pessoa->getTelefone()."', Login='".$pessoa->getLogin()."', Email='".$pessoa->getEmail()."', TipoPessoa='".$pessoa->getTipoPessoa().
+            "' where idPessoa ='".$pessoa->getIdPessoa()."'";
+        mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
+        header("Location:../View/relatorioGeralPessoa.php");
+    }
 
-
-
-    function excluir(){
+    function excluir($idPessoa){
         $sql="delete from tbPessoa where idPessoa=".$_REQUEST["id"];
         $msg="Erro ao excluir o registro<hr>";
         mysqli_query($this->con, $sql)or die ($msg.mysqli_error($this->con));
-        header("Location:relatorioGeral.php");
+        header("Location:../View/relatorioGeralPessoa.php");
     }
-    function alterar(){
-        $sql="update tbPessoa set NomeCompleto='".$_POST["NomeCompleto"]."', Cidade='".$_POST["Cidade"]."', Bairro='".$_POST["Bairro"]."', Rua='".$_POST["Rua"]."', Numero='".$_POST["Numero"].
-            "', CPF='".$_POST["CPF"]."', Telefone='".$_POST["Telefone"]."', Login='".$_POST["Login"]."', Email='".$_POST["Email"]."', TipoPessoa='".$_POST["TipoPessoa"].
-            "' where idPessoa ='".$_POST["idPessoa"]."'";
-        mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
-        header("Location:relatorioGeral.php");
-    }
-
+/*
     function consultar($login,$senha){
         $sql="select * from tbPessoa where Login='".$login."' and Senha='".$senha."'";
         $query=mysqli_query($this->con, $sql);

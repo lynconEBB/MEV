@@ -1,5 +1,7 @@
 <?php
-require_once "../Model/Produto.php"; require_once "../DAO/ProdutoDAO.php";
+require_once "../Model/Produto.php";
+require_once "../DAO/ProdutoDAO.php";
+
 class ProdutoController{
    function __construct(){
        if(isset($_REQUEST["acao"])){
@@ -19,13 +21,18 @@ class ProdutoController{
                $dao->inserir($produto);
                break;
            case 2:
-               $this->excluir();
+               $dao = new ProdutoDAO();
+               $dao->excluir($_GET[id]);
                break;
            case 3:
-               $this->listaPorId();
-               break;
-           case 4:
-               $this->alterar();
+               $produto = new Produto();
+               $produto->setDescricao($_POST["descricao"]);
+               $produto->setPreco($_POST["preco"]);
+               $produto->setQrdestoque($_POST["qtdestoque"]);
+               $produto->setIdProduto($_POST["idProduto"]);
+
+               $dao = new ProdutoDAO();
+               $dao->alterar($produto);
                break;
        }
    }
