@@ -9,7 +9,7 @@
 class Item{
     private $idItem;
     private $precoParcial;
-    private $ifProduto;
+    private $idProduto;
     private $venda;
     private $qtd;
 
@@ -33,14 +33,14 @@ class Item{
         $this->precoParcial = $precoParcial;
     }
 
-    public function getIfProduto()
+    public function getIdProduto()
     {
-        return $this->ifProduto;
+        return $this->idProduto;
     }
 
-    public function setIfProduto($ifProduto): void
+    public function setIdProduto($idProduto): void
     {
-        $this->ifProduto = $ifProduto;
+        $this->idProduto = $idProduto;
     }
 
     public function getVenda()

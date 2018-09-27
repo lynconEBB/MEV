@@ -1,5 +1,6 @@
 <?php
 require_once "conexao.php";
+require_once "../Model/Produto.php";
 
 class ProdutoDAO{
     private $con;
@@ -13,16 +14,36 @@ class ProdutoDAO{
         header("location:../View/relatorioGeralProduto.php");
     }
 
-    function listaPorId($id){
+    function listarPorId($id){
         $sql="select * from tbproduto where idproduto =".$id;
-        $query=mysqli_query($this->con, $sql);
-        return $query;
+        $resultado = mysqli_query($this->con, $sql);
+        $row = mysqli_fetch_object($resultado);
+
+        $pessoa = new Produto();
+        $pessoa -> setDescricao($row->descricao);
+        $pessoa -> setQrdestoque($row->qtdestoque);
+        $pessoa -> setPreco($row->preco);
+
+        return $pessoa;
     }
 
     function listar(){
         $sql="select * from tbproduto";
-        $query = mysqli_query($this->con, $sql);
-        return $query;
+        $resultado = mysqli_query($this->con, $sql);
+
+        $lista_pessoa = array();
+
+        while ($row = mysqli_fetch_array($resultado)) {
+            $pessoa = new Produto();
+            $pessoa -> setDescricao($row['descricao']);
+            $pessoa -> setQrdestoque($row['qtdestoque']);
+            $pessoa -> setPreco($row['preco']);
+            $pessoa -> setIdProduto($row['idProduto']);
+
+            $lista_pessoa[] = $pessoa;
+        }
+
+        return $lista_pessoa;
     }
 
     function excluir($id){
@@ -36,6 +57,12 @@ class ProdutoDAO{
         $sql="update tbproduto set descricao='".$produto->getDescricao()."', preco='".$produto->getPreco()."', qtdestoque='".$produto->getQrdestoque()."' where idProduto='".$produto->getIdProduto()."'";
         mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
         header("Location:../View/menuProduto.php");
+
+    }
+
+    function atualizaEstoque($idProduto,$qtd){
+        $sql="update tbproduto set qtdestoque ='".$qtd."' where idProduto='".$idProduto."'";
+        mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
 
     }
 }
