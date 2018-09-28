@@ -21,25 +21,40 @@ class VendaDAO{
     }
 
 
-    /*
-    function listarNotaFiscal(){
-        $sql="select * from tbproduto";
-        $query=mysqli_query($this->con, $sql);
-        return $query;
-    }
-
     function listar(){
         $sql="select * from tbvenda";
-        $query=mysqli_query($this->con, $sql);
-        return $query;
+        $resultado = mysqli_query($this->con, $sql);
+
+        $lista_venda = array();
+
+        while ($row = mysqli_fetch_array($resultado)) {
+            $venda = new Venda();
+            $venda -> setIdVenda($row["idVenda"]);
+            $venda -> setIdCliente($row["idCliente"]);
+            $venda -> setCartaoNum($row["cartaoNum"]);
+            $venda -> setCartaoBand($row["cartaoBand"]);
+            $venda -> setDtVenda($row["dtVenda"]);
+            $venda -> setTotal($row["Total"]);
+
+            $lista_venda[] = $venda;
+        }
+
+        return $lista_venda;
     }
 
 
-    function geraNotaFiscal(){
-        $sql="select distinct preco, descricao, qtd, PrecoParcial, NomeCompleto,Total, dtVenda,cartaoBand,cartaoNum from tbproduto inner join tbitem on tbitem.idProduto = tbproduto.idProduto 
-        inner join tbvenda on tbvenda.idVenda = tbitem.idVenda inner join tbpessoa on tbpessoa.idPessoa = tbvenda.idCliente where tbvenda.idVenda='".$_REQUEST["id"]."'";
-        $query=mysqli_query($this->con, $sql);
+    function listarPorId($id){
+        $sql="select Total, dtVenda,cartaoBand,cartaoNum from tbvenda where idVenda='".$id."'";
+        $resultado=mysqli_query($this->con, $sql);
 
-        return $query;
-    }*/
+        $row = mysqli_fetch_object($resultado);
+
+        $venda = new Venda();
+        $venda -> setCartaoNum($row->cartaoNum);
+        $venda -> setCartaoBand($row->cartaoBand);
+        $venda -> setDtVenda($row->dtVenda);
+        $venda -> setTotal($row->Total);
+
+        return $venda;
+    }
 }

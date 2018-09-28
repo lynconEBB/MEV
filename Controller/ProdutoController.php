@@ -36,6 +36,10 @@ class ProdutoController{
         return $this -> produtoDAO ->listarPorId($id);
    }
 
+   function listarPorIdItem($idItem){
+        return $this -> produtoDAO ->listarPorIdItem($idItem);
+   }
+
    function inserir(){
        $produto = new Produto();
        $produto->setDescricao($_POST["descricao"]);

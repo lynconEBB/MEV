@@ -43,4 +43,8 @@ class ItemController{
             exit();
         }
     }
+
+    function listarPorIdVenda($idVenda){
+        return $this -> itemDAO -> listarPorIdVenda($idVenda);
+    }
 }

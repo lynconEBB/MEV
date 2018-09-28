@@ -2,6 +2,8 @@
     require_once '../DAO/VendaDAO.php';
     require_once '../Model/Venda.php';
     require_once 'ItemController.php';
+    require_once 'ProdutoController.php';
+    require_once 'PessoaController.php';
 
     class VendaController{
         private $vendaDAO;
@@ -50,9 +52,32 @@
                 $precoParcial = $precoProduto * $qtd;
                 $total += $precoParcial;
             }
-
-
             return $total;
+        }
+
+        function listar(){
+            return $this -> vendaDAO -> listar();
+        }
+
+        function gerarNotaFiscal($id){
+            $itemControl = new ItemController();
+            $itens = $itemControl->listarPorIdVenda($id);
+
+            $produtoControl = new ProdutoController();
+            $produtos= array();
+
+            foreach ($itens as $item){
+                $produto = $produtoControl -> listarPorIdItem($item->getIdItem());
+                $produtos[] = $produto;
+            }
+
+            $pessoaControl = new PessoaController();
+            $cliente = $pessoaControl ->listarPorIdVenda($id);
+
+            $venda = $this ->vendaDAO->listarPorId($id);
+
+            return array($itens,$produtos,$cliente,$venda,);
+
         }
 
     }

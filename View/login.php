@@ -5,7 +5,7 @@
     </head>
     <body>
         <h3>Preencha os campos abaixo</h3>
-        <FORM action="../Controller/validacao.php?action=login" method="POST">
+        <FORM action="../Controller/ValidacaoLogin.php?action=login" method="POST">
             Digite o seu nome: 
             <input type="text" name="CAMPO_USUARIO"><BR>
             Digite sua senha: 

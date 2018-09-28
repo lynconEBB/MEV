@@ -1,10 +1,14 @@
-<html>
-    <head>
-        <title>Cadastro de pessoas</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-	    Cadastro de pessoas<br> 
+<?php
+    require_once '../Controller/ValidacaoLogin.php';
+    if(ValidacaoLogin::verificar()==true) {
+        ?>
+        <html>
+        <head>
+            <title>Cadastro de pessoas</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+        Cadastro de pessoas<br>
         <form action="../Controller/PessoaController.php" method="post" enctype="multipart/form-data">
             Nome: <input type="text" name="NomeCompleto"><br>
             E-mail: <input type="text" name="Email"><br>
@@ -20,5 +24,8 @@
             <input type="hidden" name="acao" value="1">
             <input type="submit" value="Salvar">
         </form>
-    </body>
-</html>
+        </body>
+        </html>
+        <?php
+    }
+    ?>

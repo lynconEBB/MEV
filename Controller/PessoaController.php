@@ -35,6 +35,10 @@ class PessoaController{
         return $this -> pessoaDAO ->listarPorId($id);
     }
 
+    function listarPorIdVenda($idVenda){
+        return $this -> pessoaDAO -> listarPorIdVenda($idVenda);
+    }
+
     function inserir(){
         $pessoa = new Pessoa();
         $pessoa->setNomeCompleto($_POST["NomeCompleto"]);
@@ -71,6 +75,10 @@ class PessoaController{
 
     function excluir(){
         $this -> pessoaDAO -> excluir($_GET["id"]);
+    }
+
+    function consultar($login,$senha){
+        return $this -> pessoaDAO ->consultar($login,$senha);
     }
 }
 new PessoaController();

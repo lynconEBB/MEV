@@ -19,31 +19,31 @@ class ProdutoDAO{
         $resultado = mysqli_query($this->con, $sql);
         $row = mysqli_fetch_object($resultado);
 
-        $pessoa = new Produto();
-        $pessoa -> setDescricao($row->descricao);
-        $pessoa -> setQrdestoque($row->qtdestoque);
-        $pessoa -> setPreco($row->preco);
+        $produto = new Produto();
+        $produto -> setDescricao($row->descricao);
+        $produto -> setQrdestoque($row->qtdestoque);
+        $produto -> setPreco($row->preco);
 
-        return $pessoa;
+        return $produto;
     }
 
     function listar(){
         $sql="select * from tbproduto";
         $resultado = mysqli_query($this->con, $sql);
 
-        $lista_pessoa = array();
+        $lista_produto = array();
 
         while ($row = mysqli_fetch_array($resultado)) {
-            $pessoa = new Produto();
-            $pessoa -> setDescricao($row['descricao']);
-            $pessoa -> setQrdestoque($row['qtdestoque']);
-            $pessoa -> setPreco($row['preco']);
-            $pessoa -> setIdProduto($row['idProduto']);
+            $produto = new Produto();
+            $produto -> setDescricao($row['descricao']);
+            $produto -> setQrdestoque($row['qtdestoque']);
+            $produto -> setPreco($row['preco']);
+            $produto -> setIdProduto($row['idProduto']);
 
-            $lista_pessoa[] = $pessoa;
+            $lista_produto[] = $produto;
         }
 
-        return $lista_pessoa;
+        return $lista_produto;
     }
 
     function excluir($id){
@@ -63,6 +63,18 @@ class ProdutoDAO{
     function atualizaEstoque($idProduto,$qtd){
         $sql="update tbproduto set qtdestoque ='".$qtd."' where idProduto='".$idProduto."'";
         mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
+    }
 
+    function listarPorIdItem($idItem){
+        $sql="select descricao,preco from tbproduto inner join tbitem  on tbproduto.idProduto = tbitem.idProduto where tbitem.idItem ='".$idItem."'";
+        $resultado = mysqli_query($this->con, $sql);
+
+        $row = mysqli_fetch_object($resultado);
+
+        $produto = new Produto();
+        $produto -> setDescricao($row->descricao);
+        $produto -> setPreco($row->preco);
+
+        return $produto;
     }
 }

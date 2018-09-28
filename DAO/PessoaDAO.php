@@ -75,10 +75,25 @@ class PessoaDAO{
         header("Location:../View/relatorioGeralPessoa.php");
 
     }
-/*
+
+    function listarPorIdVenda($idVenda){
+        $sql = "select NomeCompleto,Login,Telefone,Email from tbPessoa inner join tbvenda on tbpessoa.idPessoa = tbvenda.idCliente where tbvenda.idVenda='".$idVenda."'";
+        $resultado = mysqli_query($this->con, $sql);
+
+        $row = mysqli_fetch_object($resultado);
+        $pessoa = new Pessoa();
+        $pessoa -> setNomeCompleto($row->NomeCompleto);
+        $pessoa -> setEmail($row->Email);
+        $pessoa -> setLogin($row->Login);
+        $pessoa -> setTelefone($row->Telefone);
+
+        return $pessoa;
+    }
+
     function consultar($login,$senha){
         $sql="select * from tbPessoa where Login='".$login."' and Senha='".$senha."'";
         $query=mysqli_query($this->con, $sql);
+
         if($query!= false){
             $num=mysqli_num_rows($query) ;
         }else{
@@ -89,7 +104,7 @@ class PessoaDAO{
         }else{
             return false;
         }
-    }*/
+    }
 }
 
 ?>

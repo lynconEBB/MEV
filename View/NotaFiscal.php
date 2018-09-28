@@ -1,43 +1,40 @@
 <?php
-    session_start();
-    if(! isset($_SESSION["autenticado"]) || $_SESSION["autenticado"] != TRUE){
-        echo "Acesso não autorizado!<BR>";
-        echo "Por gentileza, faça o seu login <A href='login.php'>clicando aqui</A>.";
-        exit();
-    }
-    else{
-        echo "Você está logado como usuário: ".$_SESSION["usuario"]."<br><br>";
-        require_once 'crudVenda.php';
-        $obj=new CrudV();
-        $query=$obj->geraNotaFiscal();
-        $query2=$obj->geraNotaFiscal();
-    
-        $array2=mysqli_fetch_object($query2);
-        echo "<b>Nome do Cliente: </b>".$array2->NomeCompleto."<br>";
-        echo "<b>Data da Venda: </b>".$array2->dtVenda."<br>";
-        echo "<b>Numero do Cartão: </b>".$array2->cartaoNum."<br>";
-        echo "<b>Bandeira do Cartão: </b>".$array2->cartaoBand."<br><br>";
+    require_once '../Controller/VendaController.php';
+    require_once '../Controller/ItemController.php';
+    require_once '../Controller/ValidacaoLogin.php';
+    if(ValidacaoLogin::verificar()==true) {
+        $vendaControl = new VendaController();
+        $nota = $vendaControl->gerarNotaFiscal($_GET["id"]);
+        $itens = $nota[0];
+        $produtos = $nota[1];
+        $cliente = $nota[2];
+        $venda = $nota[3];
+        echo "<b>Nome do Cliente: </b>" . $cliente->getNomeCompleto() . "<br>";
+        echo "<b>Data da Venda: </b>" . $venda->getDtVenda() . "<br>";
+        echo "<b>Numero do Cartão: </b>" . $venda->getCartaoNum() . "<br>";
+        echo "<b>Bandeira do Cartão: </b>" . $venda->getCartaoBand() . "<br><br>";
         echo "<table border=1>";
-            echo "<tr>
-                    <th>Produto</th>
-                    <th>Preco Unitario</th>
-                    <th>Quantidade</th>
-                    <th>Preco Parcial</th>
-                </tr>";
-            echo "<tr>";
-            while($array=mysqli_fetch_object($query)){
-                echo "<td>".$array->descricao."</td>";
-                echo "<td>".$array->preco."</td>";
-                echo "<td>".$array->qtd."</td>";
-                echo "<td>".$array->PrecoParcial."</td>";
-                echo "</tr>";
-            }
-            echo "<tr>
-                <th colspan=2>Total</th>
-                <th colspan=2 >".$array2->Total."</th>
-                
-            </tr>";
+        echo "<tr>";
+        echo "<th>Produto</th>";
+        echo "<th>Preco Unitario</th>";
+        echo "<th>Quantidade</th>";
+        echo "<th>Preco Parcial</th>";
+        echo "</tr>";
+        echo "<tr>";
 
+        $i = 0;
+        while ($i < count($produtos)) {
+            echo "<td>" . $produtos[$i]->getDescricao() . "</td>";
+            echo "<td>" . $produtos[$i]->getPreco() . "</td>";
+            echo "<td>" . $itens[$i]->getQtd() . "</td>";
+            echo "<td>" . $itens[$i]->getPrecoParcial() . "</td>";
+            echo "</tr>";
+            $i++;
+        }
+        echo "<tr>";
+        echo "<th colspan=2>Total</th>";
+        echo "<th colspan=2 >" . $venda->getTotal() . "</th>";
+        echo "</tr>";
         echo "</table>";
     }
 ?>
