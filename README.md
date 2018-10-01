@@ -1,5 +1,9 @@
-# MEV Mimo e Você
+# MEV
 
-## Autor: Lyncon Estevan Bernardo Baez
+## Autores:
+  #### Lyncon Estevan Bernardo Baez
+  #### Camila Gomes Ferreira
 
-Projeto para criar um sistema de gerenciamentos de uma loja online chamada Mimo e Você
+## Descrição:
+
+Projeto para criar um sistema de gerenciamento de uma loja online chamada Mimo e Você
