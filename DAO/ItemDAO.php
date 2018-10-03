@@ -10,7 +10,12 @@ class ItemDAO{
 
     function inserir(Item $item){
         $sql = "insert into tbItem (precoParcial,idProduto,idVenda,qtd) values ('".$item->getPrecoParcial()."','".$item->getIdProduto()."','".$item->getVenda()."','".$item->getQtd()."')";
-        mysqli_query($this->con, $sql)or die (mysqli_error($this->con));
+        if(mysqli_query($this->con, $sql)or die (mysqli_error($this->con))){
+            return true;
+        }else{
+            return false;
+        }
+
     }
 
     function excluirPorIdVenda($idVenda){

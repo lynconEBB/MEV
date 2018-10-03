@@ -25,31 +25,35 @@
             }
         }
 
+        function excluir($id){
+            $this->vendaDAO->excluir($id);
+        }
+
         function inserir(){
             $venda = new Venda();
             $venda->setDtVenda($_POST["dtVenda"]);
             $venda->setCartaoBand($_POST["cartaoBand"]);
             $venda->setIdCliente($_POST["idPessoa"]);
             $venda ->setCartaoNum($_POST["cartaoNum"]);
-            $total = $this ->gerarTotal($_POST["produtos"],$_POST["Quantidade"]);
+            $total = $this ->gerarTotal($_POST["pos"],$_POST["Quantidade"],$_POST["preco"]);
             $venda -> setTotal($total);
             $idVenda = $this ->vendaDAO ->inserir($venda);
             $itemControl = new ItemController();
-            $itemControl -> inserir($_POST["produtos"],$_POST["Quantidade"],$idVenda);
-            header("Location:../View/MenuGeral.php");
+            if($itemControl -> inserir($_POST["pos"],$_POST["Quantidade"],$idVenda,$_POST["preco"],$_POST["qtdestoque"],$_POST["idProduto"])){
+                header("Location:../View/MenuGeral.php");
+            }else{
+                echo "Erro no processo de Insercao da Venda";
+                $this ->excluir($idVenda);
+            }
 
 
         }
 
-        function gerarTotal($produtos,$qtds){
+        function gerarTotal($pos,$qtds,$preco){
             $total = 0.0;
 
-            foreach ($produtos as $produto){
-                $ProdPosPre = explode("-",$produto);
-                $precoProduto = floatval($ProdPosPre[2]);
-                $Pos = $ProdPosPre[1];
-                $qtd = (doubleval($qtds[$Pos]));
-                $precoParcial = $precoProduto * $qtd;
+            foreach ($pos as $po){
+                $precoParcial = $preco[$po] * $qtds[$po];
                 $total += $precoParcial;
             }
             return $total;

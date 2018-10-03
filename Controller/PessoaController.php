@@ -53,7 +53,9 @@ class PessoaController{
         $pessoa->setEmail($_POST["Email"]);
         $pessoa->setTipoPessoa($_POST["TipoPessoa"]);
 
-        $this -> pessoaDAO -> inserir($pessoa);
+        if($this -> pessoaDAO -> inserir($pessoa)){
+            header("Location:../View/listarPessoa.php");
+        }
     }
 
     function alterar(){
@@ -70,11 +72,15 @@ class PessoaController{
         $pessoa->setTipoPessoa($_POST["TipoPessoa"]);
         $pessoa->setIdPessoa($_POST["idPessoa"]);
 
-        $this -> pessoaDAO -> alterar($pessoa);
+        if($this -> pessoaDAO -> alterar($pessoa)){
+            header("Location:../View/listarPessoa.php");
+        }
     }
 
     function excluir(){
-        $this -> pessoaDAO -> excluir($_GET["id"]);
+        if($this -> pessoaDAO -> excluir($_GET["id"])){
+            header("Location:../View/listarPessoa.php");
+        }
     }
 
     function consultar($login,$senha){

@@ -91,6 +91,12 @@
                 echo "<td><a class='text-dark' href='listarVendaPorID.php?id=" . $venda->getIdVenda() . "'>Escolher</a></td>";
                 echo "</tr>";
             }
+            echo "<tr>";
+            echo "<td colspan='7' align='center'><a href='formEscolheVendaPorCliente.php'><button class='btn btn-warning '>Listar Vendas por Cliente</button> </a> </td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td colspan='7' align='center'><a href='formCadastroVenda.php'><button class='btn btn-dark '>++++++Cadastrar Venda++++++</button> </a> </td>";
+            echo "</tr>";
             echo "</tbody>";
             echo "</table>";
             echo "</div>";

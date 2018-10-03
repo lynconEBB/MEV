@@ -46,7 +46,9 @@ class ProdutoController{
        $produto->setPreco($_POST["preco"]);
        $produto->setQrdestoque($_POST["qtdestoque"]);
 
-       $this -> produtoDAO -> inserir($produto);
+       if($this -> produtoDAO -> inserir($produto)){
+           header("location:../View/listarProduto.php");
+       }
    }
 
    function alterar(){
@@ -56,11 +58,15 @@ class ProdutoController{
        $produto->setQrdestoque($_POST["qtdestoque"]);
        $produto->setIdProduto($_POST["idProduto"]);
 
-       $this -> produtoDAO -> alterar($produto);
+       if($this -> produtoDAO -> alterar($produto)){
+           header("Location:../View/listarProduto.php");
+       }
    }
 
    function excluir(){
-        $this -> produtoDAO -> excluir($_GET["id"]);
+        if($this -> produtoDAO -> excluir($_GET["id"])){
+            header("Location:../View/listarProduto.php");
+        }
    }
 
    function atualizaEstoque($idProduto,$qtd){

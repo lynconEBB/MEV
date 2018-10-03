@@ -10,8 +10,11 @@ class ProdutoDAO{
 
     function inserir(Produto $produto){
         $sql="insert into tbproduto (descricao, preco, qtdestoque) values ('".$produto->getDescricao()."','".$produto->getPreco()."','".$produto->getQrdestoque()."')";
-        mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
-        header("location:../View/listarProduto.php");
+        if(mysqli_query($this->con, $sql) or die (mysqli_error($this->con))){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     function listarPorId($id){
@@ -49,14 +52,20 @@ class ProdutoDAO{
     function excluir($id){
         $sql="delete from tbproduto where idproduto=".$id;
         $msg="Erro ao excluir o registro<hr>";
-        mysqli_query($this->con, $sql)or die ($msg.mysqli_error($this->con));
-        header("Location:../View/listarProduto.php");
+        if(mysqli_query($this->con, $sql)or die ($msg.mysqli_error($this->con))){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     function alterar(Produto $produto){
         $sql="update tbproduto set descricao='".$produto->getDescricao()."', preco='".$produto->getPreco()."', qtdestoque='".$produto->getQrdestoque()."' where idProduto='".$produto->getIdProduto()."'";
-        mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
-        header("Location:../View/listarProduto.php");
+        if(mysqli_query($this->con, $sql) or die (mysqli_error($this->con))){
+            return true;
+        }else{
+            return false;
+        }
 
     }
 

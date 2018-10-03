@@ -10,8 +10,11 @@ class PessoaDAO{
     function inserir(Pessoa $pessoa){
         $sql="insert into tbPessoa (NomeCompleto, Cidade,Bairro,Rua,Numero,CPF,Telefone,Login,Senha,Email,TipoPessoa) values('".$pessoa->getNomeCompleto()."','".$pessoa->getCidade()."','".$pessoa->getBairro()."','".$pessoa->getRua()."','".$pessoa->getNumero()."','".$pessoa->getCpf()."','".$pessoa->getTelefone()."','".$pessoa->getLogin()
             ."','".$pessoa->getSenha()."','".$pessoa->getEmail()."','".$pessoa->getTipoPessoa()."')";
-        mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
-        header("Location:../View/listarPessoa.php");
+        if(mysqli_query($this->con, $sql) or die (mysqli_error($this->con))){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     function listar(){
@@ -63,17 +66,22 @@ class PessoaDAO{
         $sql="update tbPessoa set NomeCompleto='".$pessoa->getNomeCompleto()."', Cidade='".$pessoa->getCidade()."', Bairro='".$pessoa->getBairro()."', Rua='".$pessoa->getRua()."', Numero='".$pessoa->getNumero().
             "', CPF='".$pessoa->getCpf()."', Telefone='".$pessoa->getTelefone()."', Login='".$pessoa->getLogin()."', Email='".$pessoa->getEmail()."', TipoPessoa='".$pessoa->getTipoPessoa().
             "' where idPessoa ='".$pessoa->getIdPessoa()."'";
-        mysqli_query($this->con, $sql) or die (mysqli_error($this->con));
-        header("Location:../View/listarPessoa.php");
+        if(mysqli_query($this->con, $sql) or die (mysqli_error($this->con))){
+            return true;
+        }else{
+            return false;
+        }
 
     }
 
     function excluir($idPessoa){
         $sql="delete from tbPessoa where idPessoa=".$idPessoa;
         $msg="Erro ao excluir o registro<hr>";
-        mysqli_query($this->con, $sql)or die ($msg.mysqli_error($this->con));
-        header("Location:../View/listarPessoa.php");
-
+        if(mysqli_query($this->con, $sql)or die ($msg.mysqli_error($this->con))){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     function listarPorIdVenda($idVenda){

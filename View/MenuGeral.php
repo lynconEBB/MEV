@@ -113,7 +113,7 @@
 
             <div class="col-sm-5 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
                 <div class="card">
-                    <a href="menuVenda.php"> <img class="card-img-top" src="../imgs/venda2.jpg" /></a>
+                    <a href="formEscolheVendaPorID.php"> <img class="card-img-top" src="../imgs/venda2.jpg" /></a>
                     <div class="card-body">
                         <h4 class="card-title">Menu Vendas</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Gerenciamento de Vendas</h6>
@@ -128,7 +128,7 @@
                         <li class="list-group-item">Cadastrar uma nova Venda</li>
                     </ul>
                     <div class="card-body">
-                        <a href="menuVenda.php" class="card-link">Ir para Menu Venda</a>
+                        <a href="formEscolheVendaPorID.php" class="card-link">Ir para Menu Venda</a>
                     </div>
                 </div>
             </div><!-- /col-sm-4 cards -->

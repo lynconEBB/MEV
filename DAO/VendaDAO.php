@@ -77,4 +77,10 @@ class VendaDAO{
 
         return $lista_venda;
     }
+
+    function excluir($id){
+        $sql = "delete from tbVenda where idVenda=".$id;
+        $msg = "Erro ao excluir o registro<hr>";
+        mysqli_query($this->con, $sql)or die ($msg.mysqli_error($this->con));
+    }
 }
