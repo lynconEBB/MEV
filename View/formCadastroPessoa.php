@@ -1,9 +1,6 @@
-<?php
-    require_once '../Controller/ValidacaoLogin.php';
-    if(ValidacaoLogin::autenticar()) {
-        ?>
-        <!doctype html>
-        <html lang="pt-br">
+
+<!doctype html>
+<html lang="pt-br">
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,7 +28,7 @@
                             <a class="nav-link" href="listarProduto.php">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="menuVenda.php">Venda</a>
+                            <a class="nav-link" href="formEscolheVendaPorID.php">Venda</a>
                         </li>
                         <li class="nav-item">
 
@@ -106,15 +103,32 @@
                                 <input type="text" name="Bairro" id="inputBairro" placeholder="Bairro" class="form-control"><BR>
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputRua"> Rua</label>
+                                <input type="text" name="Rua" id="inputRua" placeholder="Rua" class="form-control"><BR>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="inputNumero"> Número</label>
+                                <input type="text" name="Numero" id="inputNumero" placeholder="Numero" class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label for="inputTel" class="lead"> Telefone</label>
+                                <input type="text" name="Telefone" id="inputTel" placeholder="Telefone" class="form-control"><BR>
+                            </div>
+                        </div>
                         <div class=" form-row">
                             <div class="form-group col-sm-6">
                                 <input type="SUBMIT" value="Cadastrar" class="btn btn-info form-control">
                             </div>
                             <div class="form-group col-sm-6">
                                 <input type="reset" value="Limpar" class="btn btn-warning form-control">
+                                <input type="hidden" name="TipoPessoa" value="1">
+                                <input type="hidden" name="acao" value="1">
                             </div>
                         </div>
-
 
                     </form>
 
@@ -126,30 +140,4 @@
         <script src="../node_modules/popper.js/dist/umd/popper.js" ></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
         </body>
-        <html>
-        <head>
-            <title>Cadastro de pessoas</title>
-            <meta charset="utf-8">
-        </head>
-        <body>
-        Cadastro de pessoas<br>
-        <form action="../Controller/PessoaController.php" method="post" enctype="multipart/form-data">
-            Nome: <input type="text" name="NomeCompleto"><br>
-            E-mail: <input type="text" name="Email"><br>
-            Login: <input type="text" name="Login" placeholder="Nome de Usuário"><br>
-            Senha: <input type="password" name="Senha"><br>
-            CPF: <input type="text" name="CPF"><br>
-            Cidade: <input type="text" name="Cidade"><br>
-            Bairro: <input type="text" name="Bairro"><br>
-            Rua: <input type="text" name="Rua"><br>
-            Numero: <input type="text" name="Numero"><br>
-            Telefone: <input type="text" name="Telefone"><br>
-            <input type="hidden" name="TipoPessoa" value="1">
-            <input type="hidden" name="acao" value="1">
-            <input type="submit" value="Salvar">
-        </form>
-        </body>
-        </html>
-        <?php
-    }
-    ?>
+</html>

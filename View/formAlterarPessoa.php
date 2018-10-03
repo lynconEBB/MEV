@@ -6,31 +6,141 @@
         $pessoaControl = new PessoaController();
         $pessoa = $pessoaControl->listarPorId($_GET["id"]);
         ?>
-        <meta charset="utf-8">
-        <html>
+        <!doctype html>
+        <html lang="pt-br">
         <head>
-            <title>Cadastro de pessoas - Alteração </title>
-        </head>
-        <body>
-        Cadastro de pessoas - Alteração
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+            <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
 
-        <form action="../Controller/PessoaController.php" method="post">
-            Nome: <input type="text" name="NomeCompleto" value="<?php echo $pessoa->getNomeCompleto() ?>"><br>
-            E-mail: <input type="text" name="Email" value="<?php echo $pessoa->getEmail() ?>"><br>
-            Login: <input type="text" name="Login" value="<?php echo $pessoa->getLogin() ?>"><br>
-            CPF: <input type="text" name="CPF" value="<?php echo $pessoa->getCpf() ?>"><br>
-            Cidade: <input type="text" name="Cidade" value="<?php echo $pessoa->getCidade() ?>"><br>
-            Bairro: <input type="text" name="Bairro" value="<?php echo $pessoa->getBairro() ?>"><br>
-            Rua: <input type="text" name="Rua" value="<?php echo $pessoa->getRua() ?>"><br>
-            Numero: <input type="text" name="Numero" value="<?php echo $pessoa->getNumero() ?>"><br>
-            Telefone: <input type="text" name="Telefone" value="<?php echo $pessoa->getTelefone() ?>"><br>
-            <input type="hidden" name="TipoPessoa" value="1">
-            <input type="hidden" name="acao" value="3">
-            <input type="hidden" name="idPessoa" value="<?php echo $_REQUEST["id"] ?>">
-            <input type="submit" value="Salvar">
-        </form>
+            <title>Alteração de Pessoas</title>
+        </head>
+        <body class="bg-gradient-secondary">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container">
+                <a class="navbar-brand h1 mb-0" href="MenuGeral.php">Mimo&Você</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="TelaLogin.php">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listarProduto.php">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formEscolheVendaPorID.php">Venda</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="listarPessoa.php">Clientes</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Facebook</a>
+                                <a class="dropdown-item" href="#">Twitter</a>
+                                <a class="dropdown-item" href="#">Instagram</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../Controller/ValidacaoLogin.php?action=sair"><button class="btn btn-danger" type="submit">Sair</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container mb-5">
+
+            <div class="row justify-content-center mb-5 mt-2">
+                <h3 class="display-4 text-light">Alteração de Clientes</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <form action="../Controller/PessoaController.php" method="post" enctype="multipart/form-data">
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label for="inputNome"> Nome de Usuário:</label>
+                                <input type="text" name="NomeCompleto" id="inputNome" placeholder="Nome Completo" value="<?php echo $pessoa->getNomeCompleto()?>" class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label for="inputEmail">E-mail</label>
+                                <input type="text" name="Email" id="inputEmail" placeholder="E-mail" value="<?php echo $pessoa->getEmail() ?>" class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label for="inputUsuario"> Nome de Usuário</label>
+                                <input type="text" name="Login" id="inputUsuario" placeholder="Nome de Usuario" value="<?php echo $pessoa->getLogin() ?>"class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label for="inputCPF"> CPF</label>
+                                <input type="text" name="CPF" id="inputCPF" placeholder="CPF" value="<?php echo $pessoa->getCpf() ?>" class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputCidade"> Cidade</label>
+                                <input type="text" name="Cidade" id="inputCidade" placeholder="Cidade" value="<?php echo $pessoa->getCidade() ?>" class="form-control"><BR>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="inputBairro"> Bairro</label>
+                                <input type="text" name="Bairro" id="inputBairro" placeholder="Bairro" value="<?php echo $pessoa->getBairro() ?>" class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputRua"> Rua</label>
+                                <input type="text" name="Rua" id="inputRua" placeholder="Rua"  value="<?php echo $pessoa->getRua() ?>" class="form-control"><BR>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="inputNumero"> Número</label>
+                                <input type="text" name="Numero" id="inputNumero" placeholder="Numero"  value="<?php echo $pessoa->getNumero() ?>" class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label for="inputTel" class="lead"> Telefone</label>
+                                <input type="text" name="Telefone" id="inputTel" placeholder="Telefone" value="<?php echo $pessoa->getTelefone() ?>" class="form-control"><BR>
+                            </div>
+                        </div>
+                        <div class=" form-row">
+                            <div class="form-group col-sm-12">
+                                <input type="SUBMIT" value="Alterar" class="btn btn-info form-control">
+                                <input type="hidden" name="TipoPessoa" value="1">
+                                <input type="hidden" name="acao" value="3">
+                                <input type="hidden" name="idPessoa" value="<?php echo $_REQUEST["id"] ?>">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/popper.js/dist/umd/popper.js" ></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
         </body>
         </html>
+
     <?php
     }
 ?>

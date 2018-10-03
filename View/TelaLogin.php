@@ -27,7 +27,7 @@
                         <a class="nav-link" href="listarProduto.php">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menuVenda.php">Venda</a>
+                        <a class="nav-link" href="formEscolheVendaPorID.php">Venda</a>
                     </li>
                     <li class="nav-item">
 

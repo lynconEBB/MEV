@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/View/formCadastroPessoa.php" line="99" />
+    <bookmark url="file://$PROJECT_DIR$/View/formCadastroPessoa.php" line="96" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3e630c9-cb02-4272-9c88-cd510a0ebc41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MenuGeral.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/MenuGeral.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/TelaLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/TelaLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/formAlterarPessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formAlterarPessoa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/formAlterarProduto.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formAlterarProduto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/formCadastroPessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formCadastroPessoa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/formCadastroProduto.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formCadastroProduto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/formEscolheVendaPorID.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/formEscolheVendaPorID.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/listarPessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/listarPessoa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/listarProduto.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/listarProduto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/menuVenda.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,26 +41,27 @@
     <session id="1739027206">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
-          <entry key="project.open.time.0" value="5" />
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="1" />
+          <entry key="html" value="4" />
           <entry key="md" value="1" />
-          <entry key="php" value="250" />
+          <entry key="php" value="275" />
+          <entry key="rnc" value="1" />
           <entry key="scss" value="1" />
           <entry key="sql" value="10" />
           <entry key="tbitem" value="9" />
@@ -66,9 +74,10 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="28" />
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="4" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="250" />
+          <entry key="PHP" value="275" />
+          <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="1" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="9" />
@@ -78,15 +87,15 @@
         <counts>
           <entry key="PHP Console" value="6" />
           <entry key="cell" value="33" />
-          <entry key="php" value="12243" />
+          <entry key="php" value="14302" />
           <entry key="scss" value="8" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="12" />
-          <entry key="PHP" value="12237" />
+          <entry key="HTML" value="13" />
+          <entry key="PHP" value="14295" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SCSS" value="8" />
           <entry key="Scratch" value="33" />
@@ -100,12 +109,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/menuVenda.php">
+        <entry file="file://$PROJECT_DIR$/View/listarPessoa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="665">
+              <caret line="35" column="79" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -113,29 +122,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/MenuGeral.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="99" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/View/formCadastroPessoa.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="110" column="69" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
-              <folding>
-                <element signature="e#611#2647#0#HTML" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="59" column="14" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="59" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/Curso/index.html">
+        <entry file="file://$PROJECT_DIR$/View/formCadastroVenda.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="328" column="26" lean-forward="true" selection-start-line="328" selection-start-column="26" selection-end-line="328" selection-end-column="26" />
+            <state relative-caret-position="1368">
+              <caret line="72" column="107" selection-start-line="72" selection-start-column="107" selection-end-line="72" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/View/formEscolheVendaPorID.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../cursos-ricardo-sanches-bootstrap4/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2791">
+              <caret line="188" column="37" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -151,6 +166,7 @@
       <find>pessoa</find>
       <find>store</find>
       <find>fa</find>
+      <find>ul</find>
     </findStrings>
     <replaceStrings>
       <replace>password</replace>
@@ -193,27 +209,27 @@
         <option value="$PROJECT_DIR$/View/menuProduto.php" />
         <option value="$PROJECT_DIR$/View/relatorioGeralPessoa.php" />
         <option value="$PROJECT_DIR$/View/relatorioGeralProduto.php" />
-        <option value="$PROJECT_DIR$/View/formAlterarPessoa.php" />
-        <option value="$PROJECT_DIR$/View/formAlterarProduto.php" />
-        <option value="$PROJECT_DIR$/View/formCadastroProduto.php" />
         <option value="$PROJECT_DIR$/View/formEscolheNota.php" />
         <option value="$PROJECT_DIR$/DAO/ProdutoDAO.php" />
         <option value="$PROJECT_DIR$/View/NotaFiscal.php" />
         <option value="$PROJECT_DIR$/View/formCadastroVenda.php" />
         <option value="$PROJECT_DIR$/Controller/ValidacaoLogin.php" />
-        <option value="$PROJECT_DIR$/View/menuVenda.php" />
-        <option value="$PROJECT_DIR$/View/listarPessoa.php" />
-        <option value="$PROJECT_DIR$/View/listarProduto.php" />
-        <option value="$PROJECT_DIR$/View/formEscolheVendaPorID.php" />
         <option value="$PROJECT_DIR$/View/listarVendaPorID.php" />
         <option value="$PROJECT_DIR$/DAO/VendaDAO.php" />
         <option value="$PROJECT_DIR$/View/ListarVendaPorCliente.php" />
         <option value="$PROJECT_DIR$/Controller/VendaController.php" />
         <option value="$PROJECT_DIR$/View/formEscolheVendaPorCliente.php" />
         <option value="$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss" />
-        <option value="$PROJECT_DIR$/View/TelaLogin.php" />
-        <option value="$PROJECT_DIR$/View/MenuGeral.php" />
+        <option value="$PROJECT_DIR$/View/menuVenda.php" />
+        <option value="$PROJECT_DIR$/View/formAlterarPessoa.php" />
+        <option value="$PROJECT_DIR$/View/formAlterarProduto.php" />
         <option value="$PROJECT_DIR$/View/formCadastroPessoa.php" />
+        <option value="$PROJECT_DIR$/View/formCadastroProduto.php" />
+        <option value="$PROJECT_DIR$/View/listarPessoa.php" />
+        <option value="$PROJECT_DIR$/View/listarProduto.php" />
+        <option value="$PROJECT_DIR$/View/MenuGeral.php" />
+        <option value="$PROJECT_DIR$/View/TelaLogin.php" />
+        <option value="$PROJECT_DIR$/View/formEscolheVendaPorID.php" />
       </list>
     </option>
   </component>
@@ -384,7 +400,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Curso/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cursos-ricardo-sanches-bootstrap4/index.html" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -482,17 +498,19 @@
       <workItem from="1538415787041" duration="7431000" />
       <workItem from="1538497392707" duration="27000" />
       <workItem from="1538505121909" duration="4719000" />
+      <workItem from="1538516052996" duration="4111000" />
+      <workItem from="1538526538391" duration="5927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61032000" />
+    <option name="totallyTimeSpent" value="71070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1544196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.329718" />
@@ -548,14 +566,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/View/formCadastroPro.php" />
-    <entry file="file://$PROJECT_DIR$/Model/Pessoa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1577">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/cliente.php" />
     <entry file="file://$PROJECT_DIR$/View/formAlterar.php" />
     <entry file="file://$PROJECT_DIR$/View/produto.php" />
@@ -620,20 +630,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/menuProduto.php" />
     <entry file="file://$PROJECT_DIR$/View/menuPessoa.php" />
-    <entry file="file://$PROJECT_DIR$/View/formAlterarPessoa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/formCadastroProduto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAO/ProdutoDAO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -655,38 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/formAlterarProduto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/formCadastroVenda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="72" column="107" selection-start-line="72" selection-start-column="107" selection-end-line="72" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAO/ItemDAO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="154" selection-start-line="11" selection-start-column="154" selection-end-line="11" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/listarPessoa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/listarProduto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -744,20 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/formEscolheVendaPorID.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/formEscolheVendaPorCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -772,44 +726,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/Curso/index.html">
+    <entry file="file://$USER_HOME$/Documents/Curso/index.html" />
+    <entry file="file://$PROJECT_DIR$/View/formEscolheVendaPorCliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="328" column="26" lean-forward="true" selection-start-line="328" selection-start-column="26" selection-end-line="328" selection-end-column="26" />
+        <state relative-caret-position="190">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/TelaLogin.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="53" column="10" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="53" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/menuVenda.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="646">
+          <caret line="76" column="10" lean-forward="true" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/MenuGeral.php">
+    <entry file="file://$PROJECT_DIR$/View/formAlterarPessoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="99" selection-end-column="15" />
+        <state relative-caret-position="532">
+          <caret line="37" column="79" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formAlterarProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/formCadastroPessoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="110" column="69" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
-          <folding>
-            <element signature="e#611#2647#0#HTML" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="30" column="79" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cursos-ricardo-sanches-bootstrap4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2791">
+          <caret line="188" column="37" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formCadastroProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/listarProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/TelaLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="75" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/listarPessoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="79" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formCadastroVenda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="72" column="107" selection-start-line="72" selection-start-column="107" selection-end-line="72" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/MenuGeral.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="59" column="14" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="59" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/formEscolheVendaPorID.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
         </state>
       </provider>
     </entry>

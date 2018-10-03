@@ -4,6 +4,7 @@
         ?>
         <!doctype html>
         <html lang="pt-br">
+
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,6 +13,7 @@
 
             <title>Login Mimo e Você</title>
         </head>
+
         <body class="bg-gradient-secondary">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
@@ -31,7 +33,7 @@
                             <a class="nav-link" href="listarProduto.php">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="menuVenda.php">Venda</a>
+                            <a class="nav-link" href="formEscolheVendaPorID.php">Venda</a>
                         </li>
                         <li class="nav-item">
 
@@ -57,51 +59,87 @@
 
         </nav>
 
-        <div class="container">
-            <div class="row justify-content-center mb-5 mt-2">
-                <h3 class="display-4 text-light">Preencha os campos abaixo</h3>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-10 col-lg-8">
-                    <FORM action="../Controller/ValidacaoLogin.php?action=login" method="POST">
-                        <div class="form-row">
-                            <div class="form-group col-sm-12">
-                                <label for="inputUsuario"><i class="fa fa-user"></i> Nome de Usuário:</label>
-                                <input type="text" name="CAMPO_USUARIO" id="inputUsuario" placeholder="Nome de Usuario" class="form-control"><BR>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-sm-12">
-                                <label for="inputSenha"><i class="fa fa-key" ></i> Senha</label>
-                                <input type="password" name="CAMPO_SENHA" id="inputSenha" placeholder="Senha" class="form-control"><BR>
-                            </div>
-                        </div>
-                        <div class=" form-row">
-                            <div class="form-group col-sm-6">
-                                <input type="SUBMIT" value="Autenticar" class="btn btn-info form-control">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <input type="reset" value="Limpar" class="btn btn-warning form-control">
-                            </div>
-                        </div>
+        <div class="row justify-content-sm-center"><!-- row cards -->
 
-
-                    </FORM>
-
+            <div class="col-sm-5 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
+                <div class="card">
+                    <a href="listarPessoa.php"> <img class="card-img-top" src="../imgs/cliente.jpg"/></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Menu Cliente
+                        </h4>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            Gerenciamento de Clientes
+                        </h6>
+                        <div class="row">
+                            <p class="card-text col-12 text-truncate">
+                                Neste menu você pode fazer todas essas ações:
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Listar os Clientes</li>
+                        <li class="list-group-item">Alterar os dados de um Cliente</li>
+                        <li class="list-group-item">Excluir um Cliente</li>
+                        <li class="list-group-item">Cadastrar um novo Cliente</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="listarPessoa.php" class="card-link">Ir para Menu Cliente</a>
+                    </div>
                 </div>
-            </div>
+            </div><!-- /col-sm-4 cards -->
+
+            <div class="col-sm-5 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
+                <div class="card">
+                    <a href="listarProduto.php"><img class="card-img-top" src="../imgs/produto2.png"/></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Menu Produto</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Gerenciamento de Produtos</h6>
+                        <p class="card-text">
+                            Neste menu você pode fazer todas essas ações:
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Listar os Produtos em estoque</li>
+                        <li class="list-group-item">Alterar os dados de um Produto</li>
+                        <li class="list-group-item">Excluir um Produto</li>
+                        <li class="list-group-item">Cadastrar um novo Produto</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="listarProduto.php" class="card-link">Ir para Menu Produtos</a>
+                    </div>
+                </div>
+            </div><!-- /col-sm-4 cards -->
+
+            <div class="col-sm-5 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
+                <div class="card">
+                    <a href="menuVenda.php"> <img class="card-img-top" src="../imgs/venda2.jpg" /></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Menu Vendas</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Gerenciamento de Vendas</h6>
+                        <p class="card-text">
+                            Neste menu você pode fazer todas essas ações:
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Listar todas as Vendas</li>
+                        <li class="list-group-item">Exibir os dados de uma venda por ID</li>
+                        <li class="list-group-item">Exibir as vendas realizadas por um Cliente</li>
+                        <li class="list-group-item">Cadastrar uma nova Venda</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="menuVenda.php" class="card-link">Ir para Menu Venda</a>
+                    </div>
+                </div>
+            </div><!-- /col-sm-4 cards -->
+
         </div>
-
-
 
         <script src="../node_modules/jquery/dist/jquery.js"></script>
         <script src="../node_modules/popper.js/dist/umd/popper.js" ></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
         </body>
-        <h3><a href="listarPessoa.php">Menu Cliente</a></h3><br>
-        <h3><a href="listarProduto.php">Menu Produto</a></h3><br>
-        <h3><a href="menuVenda.php">Menu Venda</a></h3><br><br>
-        <a href="../Controller/ValidacaoLogin.php?action=sair">Sair</a><BR>
+
         <?php
     }
     ?>
