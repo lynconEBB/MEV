@@ -45,8 +45,6 @@
                 echo "Erro no processo de Insercao da Venda";
                 $this ->excluir($idVenda);
             }
-
-
         }
 
         function gerarTotal($pos,$qtds,$preco){

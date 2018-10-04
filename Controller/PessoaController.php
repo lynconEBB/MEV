@@ -54,7 +54,7 @@ class PessoaController{
         $pessoa->setTipoPessoa($_POST["TipoPessoa"]);
 
         if($this -> pessoaDAO -> inserir($pessoa)){
-            header("Location:../View/listarPessoa.php");
+            header("Location:../View/TelaLogin.php");
         }
     }
 

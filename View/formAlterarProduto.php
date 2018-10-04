@@ -69,7 +69,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-10 col-lg-8">
-                    <form action="../Controller/PessoaController.php" method="post" enctype="multipart/form-data">
+                    <form action="../Controller/ProdutoController.php" method="post" enctype="multipart/form-data">
                         <div class="form-row">
                             <div class="form-group col-sm-12">
                                 <label for="inputDesc"> Descrição do Produto</label>
@@ -90,8 +90,9 @@
                         </div>
                         <div class=" form-row">
                             <div class="form-group col-sm-12">
+                                <input type="hidden" name="idProduto" value="<?php echo $produto->getIdProduto();?>">
+                                <input type="hidden" name="acao" value="3">
                                 <input type="SUBMIT" value="Cadastrar" class="btn btn-info form-control">
-                                <input type="hidden" name="acao" value="1">
                             </div>
                         </div>
 

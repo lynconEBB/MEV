@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="dbMimo@localhost" uuid="778eeb40-0597-4991-b29d-aff33ce5c696">
+    <data-source source="LOCAL" name="dbmimo@localhost" uuid="a580d46a-9d18-422a-a302-3be85ca67d29">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/dbMimo</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/dbmimo</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

@@ -151,7 +151,7 @@ if(ValidacaoLogin::autenticar()) {
                 </div>
                 <div class="form-group col-sm-6">
                     <input type="reset" value="Limpar" class="btn btn-warning form-control">
-                    <input type="hidden" name="acao" value="1">
+                    <input type="hidden" name="escolha" value="1">
                 </div>
             </div>
     <input type='hidden' name='escolha' value='1'><br><br>

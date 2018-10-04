@@ -66,7 +66,7 @@ if(ValidacaoLogin::autenticar()) {
 
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-10 col-lg-8">
-                <form action="../Controller/PessoaController.php" method="post" enctype="multipart/form-data">
+                <form action="../Controller/ProdutoController.php" method="post" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="form-group col-sm-12">
                             <label for="inputDesc"> Descrição do Produto</label>

@@ -61,7 +61,7 @@
 
         <div class="row justify-content-sm-center"><!-- row cards -->
 
-            <div class="col-sm-5 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
+            <div class="col-sm-6 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
                 <div class="card">
                     <a href="listarPessoa.php"> <img class="card-img-top" src="../imgs/cliente.jpg"/></a>
                     <div class="card-body">
@@ -89,7 +89,7 @@
                 </div>
             </div><!-- /col-sm-4 cards -->
 
-            <div class="col-sm-5 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
+            <div class="col-sm-6 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
                 <div class="card">
                     <a href="listarProduto.php"><img class="card-img-top" src="../imgs/produto2.png"/></a>
                     <div class="card-body">
@@ -111,7 +111,7 @@
                 </div>
             </div><!-- /col-sm-4 cards -->
 
-            <div class="col-sm-5 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
+            <div class="col-sm-6 col-md-3 mb-5 mt-5"><!-- col-sm-4 cards -->
                 <div class="card">
                     <a href="formEscolheVendaPorID.php"> <img class="card-img-top" src="../imgs/venda2.jpg" /></a>
                     <div class="card-body">

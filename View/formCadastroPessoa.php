@@ -65,7 +65,7 @@
                     <form action="../Controller/PessoaController.php" method="post" enctype="multipart/form-data">
                         <div class="form-row">
                             <div class="form-group col-sm-12">
-                                <label for="inputNome"> Nome de Usuário:</label>
+                                <label for="inputNome"> Nome Completo:</label>
                                 <input type="text" name="NomeCompleto" id="inputNome" placeholder="Nome Completo" class="form-control"><BR>
                             </div>
                         </div>

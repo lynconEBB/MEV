@@ -60,6 +60,7 @@ class ProdutoController{
 
        if($this -> produtoDAO -> alterar($produto)){
            header("Location:../View/listarProduto.php");
+           //echo"sucesse";
        }
    }
 

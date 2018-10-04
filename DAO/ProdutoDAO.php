@@ -23,6 +23,7 @@ class ProdutoDAO{
         $row = mysqli_fetch_object($resultado);
 
         $produto = new Produto();
+        $produto -> setIdProduto($row->idProduto);
         $produto -> setDescricao($row->descricao);
         $produto -> setQrdestoque($row->qtdestoque);
         $produto -> setPreco($row->preco);
