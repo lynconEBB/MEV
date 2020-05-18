@@ -2,7 +2,6 @@
 
 ## Autores:
   #### Lyncon Estevan Bernardo Baez
-  #### Camila Gomes Ferreira
 
 ## Descrição:
 
